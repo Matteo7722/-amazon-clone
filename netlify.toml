@@ -1,0 +1,12 @@
+[build]
+  publish = "build"       # Change this if your build output folder is different
+  command = "yarn build"  # Or your actual build command
+
+[build.environment]
+  NODE_VERSION = "18"     # Use Node.js version 18 for the build
+
+[cache]
+  paths = [
+    "node_modules/**",
+    ".cache/**"
+  ]
